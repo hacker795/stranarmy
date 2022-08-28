@@ -28,14 +28,18 @@ python3 stranarmy.py darknet
 
 
 elif [[ $option == 2 || $option == 02 ]]; then
+mpg123 lion.mp3 >/dev/null 2>&1
 exit
 start1
 
 elif [[ $option == 3 ]]; then
+mpg123 lion.mp3 >/dev/null 2>&1
 exit 1
+
 
 else
 printf "\e[1;93m Wrong Option!\e[0m\n"
+mpg123 lion.mp3 >/dev/null 2>&1
 sleep 1
 clear
 menu
@@ -44,23 +48,9 @@ fi
 
 
 banner() {
-echo "
 
-
- ██▀▀▀▀███▀▀▀▀███▀▀▀▀██
-█┌─┐┌─┐█┌─┐┌─┐█┌─┐┌─┐█
-█└─┘└─┘█└─┘└─┘█└─┘└─┘█
-██▌└┘▐███▌└┘▐███▌└┘▐██
-██┼┼┼┼███┼┼┼┼███┼┼┼┼██
-██▄▄▄▄███▄▄▄▄███▄▄▄▄██
-      ×DarkSearchx
-<×=====================×>
-  ×StranArmy
-<×=====================×>
- 
-" | lolcat
     
-read -p $'Do you wanna use it: Y/N:' option
+read -p $'Do you want to continue: Y/N:' option
 
 
 

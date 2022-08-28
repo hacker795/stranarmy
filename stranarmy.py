@@ -1,21 +1,6 @@
 import time
 import sys
 import os
-import onionsearch
-print('''
-
- ██▀▀▀▀███▀▀▀▀███▀▀▀▀██
-█┌─┐┌─┐█┌─┐┌─┐█┌─┐┌─┐█
-█└─┘└─┘█└─┘└─┘█└─┘└─┘█
-██▌└┘▐███▌└┘▐███▌└┘▐██
-██┼┼┼┼███┼┼┼┼███┼┼┼┼██
-██▄▄▄▄███▄▄▄▄███▄▄▄▄██
-      ×StranArmyx
-<×=====================×>
-  ×DarkExplorer
-<×=====================×>
- 
-''') 
 
 
 def slowprint(s):
@@ -62,18 +47,20 @@ print(" ")
 print("")
 x=input("\033[92m[?] \033[96mEnter any option ==>")
 if x==('1') :
-               search = input("What are you searching for?")
                slowprint("")
-               os.system('onionsearch search --engines onionland tor66 haystack --limit 2 --mp_units 2 --output file.txt')
-               print(" ")
-               alla=input('press any key to continue')
-               os.system('clear') 
-               os.system('python3 stranarmy.py')
-
+               os.system('python3 RunScraper.py')
+               #os.system('bash red1.sh')
+               os.system('python3 main1.py')          
+               #os.system('bash scrap.sh')
+               
 if x==('2') :
                slowprint("")
                os.system('exit')
-                        
+               os.system('mpg123 lion.mp3 >/dev/null 2>&1')
+
+  
+slowprint("")
+slowprint("")
 
 
 def slowprint(s):

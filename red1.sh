@@ -1,0 +1,1 @@
+chafa -c 256 --color-space din99d --symbols -dot-stipple logo3.jpeg
