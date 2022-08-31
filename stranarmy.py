@@ -48,7 +48,7 @@ print("")
 x=input("\033[92m[?] \033[96mEnter any option ==>")
 if x==('1') :
                slowprint("")
-               os.system('python3 RunScraper.py')
+               os.system('python3 ahmiascraper.py')
                #os.system('bash red1.sh')
                os.system('python3 main1.py')          
                #os.system('bash scrap.sh')
